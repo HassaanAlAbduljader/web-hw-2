@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+<style>
+
+.menu{
+    background-image: url(https://wallup.net/wp-content/uploads/2017/03/27/438352-black-dark-abstract-3D-shards-glass-red-748x421.jpg);
+}
+
+.head{
+    color: darkgray;
+    text-align: center;
+}
+
+.avengers{
+    color: darkgray;
+}
+
+.avengersinfo{
+    color: crimson;
+}
+
+.pele{
+    color: darkgray;
+}
+
+.peleinfo{
+    color: crimson;
+}
+
+.thegreatestshowman{
+    color: darkgray;
+}
+
+.thegreatestshowmaninfo{
+    color: crimson;
+}
+</style>
+    
+
+</head>
+
+<body class="menu">
+    <br><br>
+    <h1 class="head">
+        HSN Movies
+    </h1>
+
+    <br>
+
+    <style>
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+        }
+        
+        li {
+          float: left;
+        }
+        
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        li a:hover {
+          background-color: #111;
+        }
+        </style>
+        </head>
+        <body>
+        
+        <ul>
+          <li><a class="active" href="hsn.html">Home</a></li>
+          <li><a href="rating.html">Ratings</a></li>
+          <li><a href="trailers.html">Trailers</a></li>
+        </ul>
+
+<br>
+
+    <html>
+        <title>W3.CSS</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <style>
+        .mySlides {display:none}
+        .w3-left, .w3-right, .w3-badge {cursor:pointer}
+        .w3-badge {height:13px;width:13px;padding:0}
+        </style>
+        <body>
+        
+        <div class="w3-container">
+          
+        
+        
+        <div class="w3-content w3-display-container" style="max-width:800px">
+            <img class="mySlides" src="https://images5.alphacoders.com/100/1005137.jpg" style="width: 100%;" style="height: 25%" style="width:100%">
+            <img class="mySlides" src="https://i1.wp.com/www.fromdamovies.com/wp-content/uploads/2017/07/Download-film-Pele_2016.jpg?fit=1440%2C810" style="width:100%" style="height: 25%;"style="width:100%">
+            <img class="mySlides" src="https://i1.wp.com/attackongeek.com/wp-content/uploads/2017/12/79914220171220215726.jpg?fit=1024%2C436&ssl=1" style="width:100%" style="height: 25%;" style="width:100%">
+          <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+            <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+            <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+          </div>
+        </div>
+        
+        <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function currentDiv(n) {
+          showDivs(slideIndex = n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" w3-white", "");
+          }
+          x[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " w3-white";
+        }
+        </script>
+        
+
+
+        </body>
+    
+        </html> 
+        
+        <br><br><br>
+        
+        <h2 class="avengers">
+            Avengers: The Endgame
+        </h2>
+
+        <h3 class="avengersinfo">
+            For more infirmation about the movie, <a href="avengers.html/"> click here</a>
+        </h3>
+
+        <br><br>
+
+        <h2 class="pele">
+        Pele: Birth of a legend
+        </h2>
+
+        <h3 class="peleinfo">
+             For more infirmation about the movie, <a href="pele.html"> click here</a>
+        </h3>
+      
+        <br><br>
+
+        <h2 class="thegreatestshowman">
+        The Greatest Showman
+        </h2>
+
+        <h3 class="thegreatestshowmaninfo">
+            For more infirmation about the movie, <a href="tgs.html"> click here</a>
+        </h3>
+</body>
+
+</html>
